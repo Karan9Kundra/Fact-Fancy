@@ -6,9 +6,10 @@ const ejs = require("ejs");
 const _ = require('lodash');
 
 const factsStartingContent = "Fact Fancy is a site where you can get facts about lots of topics.";
-const aboutContent = "";
+const aboutContent = "About Fact Fancy.";
 const contentContent = "Fact Fancy gives you facts about loads of topics, including: sports, games, news or simply just plain facts!";
-const contactContent = "";
+const contactContent = "Contact Us!";
+const privacyContent = "Privacy Policy.";
 
 const app = express();
 
@@ -24,6 +25,12 @@ let posts = [];
 app.get("/", function(req, res) {
   res.render("home", {
     startingContent: contentContent
+  });
+});
+
+app.get("/privacy", function(req, res) {
+  res.render("privacy", {
+    startingContent: privacyContent
   });
 });
 
@@ -58,7 +65,7 @@ app.post("/compose", function(req, res) {
 
   posts.push(post);
 
-  res.redirect("/");
+  res.redirect("/facts");
 
 });
 
