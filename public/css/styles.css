@@ -3,10 +3,92 @@
   padding: 0;
 }
 
+html {
+  min-height: 2000px;
+}
+
 body {
   background-color: #E4E9FD;
   background-image: -webkit-linear-gradient(65deg, #A683E3 50%, #E4E9FD 50%);
-  min-height: 1000px;
+}
+
+.big {
+  font-size: 45px;
+}
+
+.a-btn {
+  color: #fff;
+  margin: 5px 5px 0 0;
+}
+
+.a-btn:hover {
+  color: snow;
+}
+
+#name{
+  width: 200px;
+  height: 40px;
+  border-radius: 0px;
+  padding: 3px;
+  border-bottom: 2px solid grey;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  background-color: #E4E9FD;
+}
+
+#email{
+  width: 200px;
+  height: 40px;
+  border-radius: 0px;
+  padding: 3px;
+  border-bottom: 2px solid grey;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  background-color: #E4E9FD;
+}
+
+#name:focus{
+  width: 200px;
+  height: 40px;
+  border-radius: 0px;
+  padding: 3px;
+  border-bottom: 2px solid #A683E3;
+  outline: none;
+  background-color: #E4E9FD;
+}
+
+#email:focus{
+  width: 200px;
+  height: 40px;
+  border-radius: 0px;
+  padding: 3px;
+  border-bottom: 2px solid #A683E3;
+  outline: none;
+  background-color: #E4E9FD;
+}
+
+.placeholdertext{
+  border-radius: 0px;
+  padding: 10px;
+  border-bottom: 2px solid grey;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  background-color: #E4E9FD;
+}
+
+.placeholdertext{
+  outline: none;
+}
+
+.page-image{
+  border: 3px solid black;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.38);
+  width: 800px;
+  height: 450px;
 }
 
 .body {
@@ -74,10 +156,10 @@ hr {
 }
 
 .footer {
-  position: fixed;
+  display: grid;
   margin-top: 20px;
   text-align: center;
-  bottom: 0;
+  bottom: 100px;
   width: 100%;
   min-height: 60px;
   background-color: #1abc9c !important;
