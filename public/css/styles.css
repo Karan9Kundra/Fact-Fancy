@@ -165,6 +165,10 @@ hr {
   background-color: #1abc9c !important;
 }
 
+footer a {
+  display: inline-block;
+}
+
 .footer p {
   margin-top: 25px;
   font-size: 12px;

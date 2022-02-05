@@ -11,6 +11,7 @@ const aboutContent = "About Fact Fancy.";
 const contentContent = "Fact Fancy gives you facts about loads of topics, including: sports, games, news or simply just plain facts!";
 const contactContent = "Contact Us!";
 const privacyContent = "Privacy Policy.";
+const termsContent = "Terms And Conditions";
 
 const app = express();
 
@@ -39,6 +40,12 @@ app.get("/", function(req, res){
 
 app.get("/privacy", function(req, res) {
   res.render("privacy", {
+    startingContent: privacyContent
+  });
+});
+
+app.get("/terms-and-conditions", function(req, res) {
+  res.render("terms-and-conditions", {
     startingContent: privacyContent
   });
 });
