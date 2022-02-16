@@ -8,13 +8,20 @@
   margin: auto;
 }
 
+.footer-a {
+  display: block;
+}
+
+.hidden-a:hover{
+  text-decoration: none;
+}
+
 html {
   min-height: 2000px;
 }
 
 body {
   background-color: #E4E9FD;
-  background-image: -webkit-linear-gradient(65deg, #A683E3 50%, #E4E9FD 50%);
 }
 
 .big {
@@ -31,57 +38,63 @@ body {
 }
 
 #name{
-  width: 200px;
+  width: 400px;
   height: 40px;
   border-radius: 0px;
-  padding: 3px;
-  border-bottom: 2px solid grey;
+  padding: 10px;
+  border-bottom: 2px solid #E4E9ED;
   border-top: 0px;
   border-left: 0px;
   border-right: 0px;
-  background-color: #E4E9FD;
+  background-color: #E4E9EC;
 }
 
 #email{
-  width: 200px;
+  width: 400px;
   height: 40px;
   border-radius: 0px;
-  padding: 3px;
-  border-bottom: 2px solid grey;
+  padding: 10px;
+  border-bottom: 2px solid #E4E9ED;
   border-top: 0px;
   border-left: 0px;
   border-right: 0px;
-  background-color: #E4E9FD;
+  background-color: #E4E9EC;
 }
 
 #name:focus{
-  width: 200px;
+  width: 400px;
   height: 40px;
   border-radius: 0px;
-  padding: 3px;
+  padding: 10px;
   border-bottom: 2px solid #A683E3;
   outline: none;
-  background-color: #E4E9FD;
+  background-color: #E4E9EC;
 }
 
 #email:focus{
-  width: 200px;
+  width: 400px;
   height: 40px;
   border-radius: 0px;
-  padding: 3px;
+  padding: 10px;
   border-bottom: 2px solid #A683E3;
   outline: none;
-  background-color: #E4E9FD;
+  background-color: #E4E9EC;
 }
 
 .placeholdertext{
+  height: 200px;
+  width: 440px;
   border-radius: 0px;
   padding: 10px;
-  border-bottom: 2px solid grey;
+  border-bottom: 2px solid #E4E9ED;
   border-top: 0px;
   border-left: 0px;
   border-right: 0px;
-  background-color: #E4E9FD;
+  background-color: #E4E9EC;
+}
+
+.placeholdertext:focus{
+  border-bottom: 2px solid #A683E3;
 }
 
 .placeholdertext{

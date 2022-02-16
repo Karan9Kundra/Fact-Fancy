@@ -60,7 +60,7 @@ app.get("/facts", function(req, res) {
     });
 });
 
-app.get("/compose", function(req, res) {
+app.get("/compose/add-a-new-fact/V1faVFhHVCFrhoGKf07us2taSSe7DcxIT1mx664ntlGrKxdwr8PEfserIFSMk112ne7GfOUqmdQSaSDIodcWEQOYfHrKb08tTZOf/Cs3DQqfVVlKbVQkuTJNYlK2aMr1RHLrOz5snrKjCsw5gCNgsdfzq6LtoJrFKhvORIvwly12XJjp76nbAnZRREl3nACd0mvNvf5sL", function(req, res) {
   res.render("compose");
 });
 
@@ -92,13 +92,13 @@ app.get("/posts/:postId", function(req, res) {
 
 });
 
-app.get("/about", function(req, res) {
+app.get("/about-us", function(req, res) {
   res.render("about", {
     startingContent: aboutContent
   });
 });
 
-app.get("/contact", function(req, res) {
+app.get("/contact_us", function(req, res) {
   res.render("contact", {
     startingContent: contactContent
   });

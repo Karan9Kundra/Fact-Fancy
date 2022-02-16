@@ -1,7 +1,7 @@
 {
   "name": "ejs-challenge",
   "version": "1.0.0",
-  "description": "",
+  "description": "ejs-challenge with database!",
   "main": "app.js",
   "scripts": {
     "start": "nodemon",
@@ -11,9 +11,19 @@
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.3",
+    "dotenv": "^16.0.0",
     "ejs": "^2.6.1",
     "express": "^4.16.3",
     "lodash": "^4.17.11",
     "mongoose": "^6.2.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Karan9Kundra/Fact-Fancy.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/Karan9Kundra/Fact-Fancy/issues"
+  },
+  "homepage": "https://github.com/Karan9Kundra/Fact-Fancy#readme"
 }
