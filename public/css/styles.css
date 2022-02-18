@@ -3,6 +3,20 @@
   padding: 0;
 }
 
+nav {
+  z-index: 1000000000000000000000000000000000000000000000000000000000000;
+}
+
+.li{
+  list-style: none;
+  display: inline-flex;
+}
+
+.link{
+  margin: 5px;
+  font-size: 15px;
+}
+
 .what-we-do{
   width: 70%;
   margin: auto;
@@ -18,6 +32,14 @@
 
 html {
   min-height: 2000px;
+}
+
+.reviews {
+  background-color: rgba(135, 480, 120, 0.04);
+  border: 1px solid black;
+  width: 100%;
+  margin: 0;
+  padding: 100px;
 }
 
 body {
@@ -286,6 +308,11 @@ hr {
 }
 
 /* Position the "next button" to the right */
+
+.prev{
+  left: 0px;
+}
+
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
