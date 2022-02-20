@@ -11,6 +11,21 @@ nav {
   margin-top: 150px;
 }
 
+.bootstrap-logo {
+  border-radius: 10px;
+  transform: rotate(10deg);
+  height: 100px;
+  margin-left: 800px;
+}
+
+.node-logo {
+  border-radius: 10px;
+  transform: rotate(10deg);
+  height: 100px;
+  margin-left: 900px;
+  bottom: 100px;
+}
+
 .li{
   list-style: none;
   display: inline-flex;
@@ -27,7 +42,12 @@ nav {
 }
 
 .footer-a {
-  display: block;
+  color: black;
+}
+
+.footer-a:hover {
+  text-decoration: underline;
+  color: black;
 }
 
 .hidden-a:hover{
@@ -156,6 +176,10 @@ body {
   display: table;
 }
 
+.node {
+  border: 1px solid black;
+}
+
 head a {
   text-decoration: none;
 }
@@ -204,22 +228,23 @@ hr {
 }
 
 .footer-padding {
-  padding-bottom: 60px;
+  padding-bottom: 80px;
 }
 
 .footer {
+  align-items: center;
   display: grid;
   margin-top: 20px;
   text-align: center;
   bottom: 100px;
   width: 100%;
-  min-height: 60px;
+  min-height: 70px;
   background-color: #1abc9c !important;
 }
 
 .footer p {
   margin-top: 25px;
-  font-size: 12px;
+  font-size: 15px;
   color: #fff;
 }
 
