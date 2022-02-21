@@ -13,7 +13,6 @@ const contactContent = "Contact Us!";
 const privacyContent = "Privacy Policy.";
 const termsContent = "Terms And Conditions";
 
-const year = new Date().getFullYear();
 const app = express();
 
 app.set('view engine', 'ejs');
