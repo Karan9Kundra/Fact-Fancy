@@ -19,98 +19,99 @@ const homeTitle = "Home | ";
 
 const app = express();
 
-app.set('view engine', 'ejs');
+console.log('Hellos');
+// app.set('view engine', 'ejs');
 
-app.use(bodyParser.urlencoded({extended: true}));
-app.use(express.static("public"));
+// app.use(bodyParser.urlencoded({extended: true}));
+// app.use(express.static("public"));
 
-mongoose.connect("mongodb://localhost:27017/factsDB", {useNewUrlParser: true});
+// mongoose.connect("mongodb://localhost:27017/factsDB", {useNewUrlParser: true});
 
-const postSchema = {
-  title: String,
-  content: String
-};
+// const postSchema = {
+//   title: String,
+//   content: String
+// };
 
-const Post = mongoose.model("Post", postSchema);
+// const Post = mongoose.model("Post", postSchema);
 
-let posts = [];
+// let posts = [];
 
-app.get("/", function(req, res){
-  res.render("home", {
-    startingContent: contentContent,
-    posts: posts,
-    title: homeTitle
-    });
-});
+// app.get("/", function(req, res){
+//   res.render("home", {
+//     startingContent: contentContent,
+//     posts: posts,
+//     title: homeTitle
+//     });
+// });
 
-app.get("/privacy", function(req, res) {
-  res.render("privacy", {
-    startingContent: privacyContent
-  });
-});
+// app.get("/privacy", function(req, res) {
+//   res.render("privacy", {
+//     startingContent: privacyContent
+//   });
+// });
 
-app.get("/terms-and-conditions", function(req, res) {
-  res.render("terms-and-conditions", {
-    startingContent: termsContent
-  });
-});
+// app.get("/terms-and-conditions", function(req, res) {
+//   res.render("terms-and-conditions", {
+//     startingContent: termsContent
+//   });
+// });
 
-app.get("/facts", function(req, res) {
+// app.get("/facts", function(req, res) {
 
-    Post.find({}, function(err, posts){
-      res.render("facts", {
-        startingContent: factsStartingContent,
-        posts: posts,
-        title: factsTitle
-        });
-    });
-});
+//     Post.find({}, function(err, posts){
+//       res.render("facts", {
+//         startingContent: factsStartingContent,
+//         posts: posts,
+//         title: factsTitle
+//         });
+//     });
+// });
 
-app.get("/compose/add-a-new-fact/V1faVFhHVCFrhoGKf07us2taSSe7DcxIT1mx664ntlGrKxdwr8PEfserIFSMk112ne7GfOUqmdQSaSDIodcWEQOYfHrKb08tTZOf/Cs3DQqfVVlKbVQkuTJNYlK2aMr1RHLrOz5snrKjCsw5gCNgsdfzq6LtoJrFKhvORIvwly12XJjp76nbAnZRREl3nACd0mvNvf5sL", function(req, res) {
-  res.render("compose");
-});
+// app.get("/compose/add-a-new-fact/V1faVFhHVCFrhoGKf07us2taSSe7DcxIT1mx664ntlGrKxdwr8PEfserIFSMk112ne7GfOUqmdQSaSDIodcWEQOYfHrKb08tTZOf/Cs3DQqfVVlKbVQkuTJNYlK2aMr1RHLrOz5snrKjCsw5gCNgsdfzq6LtoJrFKhvORIvwly12XJjp76nbAnZRREl3nACd0mvNvf5sL", function(req, res) {
+//   res.render("compose");
+// });
 
-app.post("/compose", function(req, res) {
+// app.post("/compose", function(req, res) {
 
-  const post = new Post ({
-    title: req.body.postTitle,
-    content: req.body.postBody
-  });
+//   const post = new Post ({
+//     title: req.body.postTitle,
+//     content: req.body.postBody
+//   });
 
-  post.save(function(err){
-    if (!err){
-        res.redirect("/facts");
-    }
-  });
-});
+//   post.save(function(err){
+//     if (!err){
+//         res.redirect("/facts");
+//     }
+//   });
+// });
 
 
-app.get("/posts/:postId", function(req, res) {
+// app.get("/posts/:postId", function(req, res) {
 
-    const requestedPostId = req.params.postId;
+//     const requestedPostId = req.params.postId;
 
-    Post.findOne({_id: requestedPostId}, function(err, post){
-      res.render("post", {
-        title: post.title,
-        content: post.content
-      });
-    });
+//     Post.findOne({_id: requestedPostId}, function(err, post){
+//       res.render("post", {
+//         title: post.title,
+//         content: post.content
+//       });
+//     });
 
-});
+// });
 
-app.get("/about-us", function(req, res) {
-  res.render("about", {
-    startingContent: aboutContent,
-    title: aboutTitle
-  });
-});
+// app.get("/about-us", function(req, res) {
+//   res.render("about", {
+//     startingContent: aboutContent,
+//     title: aboutTitle
+//   });
+// });
 
-app.get("/contact_us", function(req, res) {
-  res.render("contact", {
-    startingContent: contactContent,
-    title: contactTitle
-  });
-});
+// app.get("/contact_us", function(req, res) {
+//   res.render("contact", {
+//     startingContent: contactContent,
+//     title: contactTitle
+//   });
+// });
 
 let port = process.env.PORT || 3000;
 
