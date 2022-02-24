@@ -37,7 +37,7 @@ console.log('Hellos');
 // let posts = [];
 
 app.get("/", function(req, res){
-  console.log('Test 2');
+  res.send('Test 2');
   // res.render("home", {
   //   startingContent: contentContent,
   //   posts: posts,
