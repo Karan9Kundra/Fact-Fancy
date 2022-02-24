@@ -12,6 +12,10 @@ const contentContent = "Fact Fancy gives you facts about loads of topics, includ
 const contactContent = "Contact Us!";
 const privacyContent = "Privacy Policy.";
 const termsContent = "Terms And Conditions";
+const aboutTitle = "About Us | ";
+const factsTitle = "Facts | ";
+const contactTitle = "Contact | ";
+const homeTitle = "Home | ";
 
 const app = express();
 
@@ -34,7 +38,8 @@ let posts = [];
 app.get("/", function(req, res){
   res.render("home", {
     startingContent: contentContent,
-    posts: posts
+    posts: posts,
+    title: homeTitle
     });
 });
 
@@ -46,7 +51,7 @@ app.get("/privacy", function(req, res) {
 
 app.get("/terms-and-conditions", function(req, res) {
   res.render("terms-and-conditions", {
-    startingContent: privacyContent
+    startingContent: termsContent
   });
 });
 
@@ -55,7 +60,8 @@ app.get("/facts", function(req, res) {
     Post.find({}, function(err, posts){
       res.render("facts", {
         startingContent: factsStartingContent,
-        posts: posts
+        posts: posts,
+        title: factsTitle
         });
     });
 });
@@ -94,13 +100,15 @@ app.get("/posts/:postId", function(req, res) {
 
 app.get("/about-us", function(req, res) {
   res.render("about", {
-    startingContent: aboutContent
+    startingContent: aboutContent,
+    title: aboutTitle
   });
 });
 
 app.get("/contact_us", function(req, res) {
   res.render("contact", {
-    startingContent: contactContent
+    startingContent: contactContent,
+    title: contactTitle
   });
 });
 

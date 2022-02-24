@@ -18,6 +18,15 @@ nav {
   margin-left: 800px;
 }
 
+.hr-f {
+  width: 60%;
+  margin: 25px auto;
+  border-style: none;
+  border-top-style: solid;
+  border-color: black;
+  border-width: 0.00000001px;
+}
+
 .node-logo {
   border-radius: 10px;
   transform: rotate(10deg);
@@ -107,6 +116,10 @@ body {
   background-color: #E4E9EC;
 }
 
+.img-res{
+  text-align: center;
+}
+
 #name:focus{
   width: 400px;
   height: 40px;
@@ -148,19 +161,23 @@ body {
 }
 
 .page-image-1{
-  border: 3px solid black;
+  border: 2px solid black;
   border-radius: 5px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.38);
-  width: 800px;
-  height: 450px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.12);
+  /* width: 800px;
+  height: 450px; */
+}
+
+.lineHeight {
+  line-height: 25px;
 }
 
 .page-image-2{
-  border: 3px solid black;
+  border: 2px solid black;
   border-radius: 5px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.38);
-  width: 1000px;
-  height: 450px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.12);
+  /* width: 1100px;
+  height: 500px; */
 }
 
 .body {
@@ -194,7 +211,7 @@ hr {
   border-style: none;
   border-top-style: solid;
   border-color: black;
-  border-width: 1px;
+  border-width: 2px;
   width: 100%;
 }
 
@@ -232,9 +249,8 @@ hr {
 }
 
 .footer {
-  align-items: center;
+  text-align: center;
   display: grid;
-  margin-top: 20px;
   text-align: center;
   bottom: 100px;
   width: 100%;
