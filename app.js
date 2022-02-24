@@ -36,13 +36,14 @@ console.log('Hellos');
 
 // let posts = [];
 
-// app.get("/", function(req, res){
-//   res.render("home", {
-//     startingContent: contentContent,
-//     posts: posts,
-//     title: homeTitle
-//     });
-// });
+app.get("/", function(req, res){
+  console.log('Test 2');
+  // res.render("home", {
+  //   startingContent: contentContent,
+  //   posts: posts,
+  //   title: homeTitle
+  //   });
+});
 
 // app.get("/privacy", function(req, res) {
 //   res.render("privacy", {
