@@ -43,6 +43,17 @@ app.get("/", function(req, res){
     });
 });
 
+app.get("/facts", function(req, res) {
+
+  Post.find({}, function(err, posts){
+    res.render("facts", {
+      startingContent: factsStartingContent,
+      posts: posts,
+      title: factsTitle
+      });
+  });
+});
+
 app.get("/privacy", function(req, res) {
   res.render("privacy", {
     startingContent: privacyContent
@@ -53,17 +64,6 @@ app.get("/terms-and-conditions", function(req, res) {
   res.render("terms-and-conditions", {
     startingContent: termsContent
   });
-});
-
-app.get("/facts", function(req, res) {
-
-    Post.find({}, function(err, posts){
-      res.render("facts", {
-        startingContent: factsStartingContent,
-        posts: posts,
-        title: factsTitle
-        });
-    });
 });
 
 app.get("/compose/add-a-new-fact/V1faVFhHVCFrhoGKf07us2taSSe7DcxIT1mx664ntlGrKxdwr8PEfserIFSMk112ne7GfOUqmdQSaSDIodcWEQOYfHrKb08tTZOf/Cs3DQqfVVlKbVQkuTJNYlK2aMr1RHLrOz5snrKjCsw5gCNgsdfzq6LtoJrFKhvORIvwly12XJjp76nbAnZRREl3nACd0mvNvf5sL", function(req, res) {
