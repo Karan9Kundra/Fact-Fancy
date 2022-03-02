@@ -24,7 +24,7 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb://localhost:27017/factsDB", {useNewUrlParser: true});
+mongoose.connect("mongodb+srv://admin-karan:Testpwd!234@cluster0.2s20q.mongodb.net/factsDB", {useNewUrlParser: true});
 
 const postSchema = {
   title: String,
