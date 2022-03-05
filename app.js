@@ -16,6 +16,11 @@ const aboutTitle = "About Us | ";
 const factsTitle = "Facts | ";
 const contactTitle = "Contact | ";
 const homeTitle = "Home | ";
+const datenew = new Date();
+const day = datenew.getDay();
+const month = datenew.getMonth();
+const year = datenew.getFullYear();
+const date = day + "/" + month + "/" + year;
 
 const app = express();
 
@@ -49,7 +54,8 @@ app.get("/facts", function(req, res) {
     res.render("facts", {
       startingContent: factsStartingContent,
       posts: posts,
-      title: factsTitle
+      title: factsTitle,
+      "date": date
       });
   });
 });
