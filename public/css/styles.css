@@ -467,4 +467,8 @@ hr {
     display: block;
     margin-top: 50px;
   }
+
+  .reviews {
+    display: none;
+  }
 }
