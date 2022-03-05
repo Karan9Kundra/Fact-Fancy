@@ -244,6 +244,33 @@ hr {
   color: #1abc9c !important;
 }
 
+@media (max-width: 768px) {
+  .bootstrap-logo {
+    border-radius: 10px;
+    transform: rotate(10deg);
+    height: 100px;
+    margin-left: 400px;
+  }
+
+  .node-logo {
+    border-radius: 10px;
+    transform: rotate(10deg);
+    height: 100px;
+    margin-left: 450px;
+    bottom: 100px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .page-image-1 {
+    display: none;
+  }
+
+  .page-image-2 {
+    display: none;
+  }
+}
+
 .footer-padding {
   padding-bottom: 80px;
 }
@@ -401,4 +428,34 @@ hr {
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+/************************** TOGGLE!!! **************************/
+
+.toggle-btn {
+  display: none;
+  padding: 10px 10px;
+  position: absolute;
+  z-index: 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000;
+  /* top: 65px; */
+}
+
+@media screen and (max-width: 750px) {
+  .toggle-btn-visible {
+    display: block;
+  }
+
+  .toggle-target-hidden {
+    display: none;
+  }
+
+  .toggle-target-expanded {
+    display: block;
+    margin-top: 50px;
+  }
+
+  .terms {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
 }
