@@ -249,7 +249,7 @@ hr {
 }
 
 .footer {
-  text-align: center;
+  align-items: center;
   display: grid;
   text-align: center;
   bottom: 100px;
