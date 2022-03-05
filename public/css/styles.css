@@ -15,7 +15,7 @@ nav {
   border-radius: 10px;
   transform: rotate(10deg);
   height: 100px;
-  margin-left: auto;
+  margin-left: 800px;
 }
 
 .hr-f {
@@ -32,7 +32,7 @@ nav {
   transform: rotate(10deg);
   height: 100px;
   margin-left: 900px;
-  bottom: auto;
+  bottom: 100px;
 }
 
 .li{
