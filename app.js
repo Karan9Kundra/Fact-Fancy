@@ -44,7 +44,8 @@ app.get("/", function(req, res){
   res.render("home", {
     startingContent: contentContent,
     posts: posts,
-    title: homeTitle
+    title: homeTitle,
+    "date": date
     });
 });
 
@@ -62,13 +63,15 @@ app.get("/facts", function(req, res) {
 
 app.get("/privacy", function(req, res) {
   res.render("privacy", {
-    startingContent: privacyContent
+    startingContent: privacyContent,
+    "date": date
   });
 });
 
 app.get("/terms-and-conditions", function(req, res) {
   res.render("terms-and-conditions", {
-    startingContent: termsContent
+    startingContent: termsContent,
+    "date": date
   });
 });
 
