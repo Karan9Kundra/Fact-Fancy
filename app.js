@@ -44,8 +44,7 @@ app.get("/", function(req, res){
   res.render("home", {
     startingContent: contentContent,
     posts: posts,
-    title: homeTitle,
-    "date": date
+    title: homeTitle
     });
 });
 
@@ -55,23 +54,20 @@ app.get("/facts", function(req, res) {
     res.render("facts", {
       startingContent: factsStartingContent,
       posts: posts,
-      title: factsTitle,
-      "date": date
+      title: factsTitle
       });
   });
 });
 
 app.get("/privacy", function(req, res) {
   res.render("privacy", {
-    startingContent: privacyContent,
-    "date": date
+    startingContent: privacyContent
   });
 });
 
 app.get("/terms-and-conditions", function(req, res) {
   res.render("terms-and-conditions", {
-    startingContent: termsContent,
-    "date": date
+    startingContent: termsContent
   });
 });
 
