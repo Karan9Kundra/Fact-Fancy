@@ -9,13 +9,16 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="/css/styles.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-	<script type="text/javascript" src="/css/declarativeToggle.js"></script>
+  <script type="text/javascript" src="/css/declarativeToggle.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   <link rel="apple-touch-icon" sizes="180x180" href="/css/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/css/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/css/favicon-16x16.png">
-<link rel="manifest" href="/css/site.webmanifest">
+  <link rel="manifest" href="/css/site.webmanifest">
+  <meta name="Copyright" content="Fact Fancy co." />
+  <meta name="keywords" content="factfancy, facts, fact, open-source, edit, work, Fact Fancy, fact fancy, heroku, com" />
+  <meta name="description" content="Fact Fancy, the free, open-source and editable fact-website gives you facts about loads of topics, including: sports, games, news or simply just plain facts!" />
   <nav class="nav navbar navbar-inverse">
     <div class="container">
       <div class="nav navbar-header">
@@ -32,39 +35,44 @@
   </nav>
   <span data-toggle-target=".nav" class="toggle-btn"><img src="/css/menu.png" alt="menu"></span>
 </head>
+
 <body>
   <div class="container">
     <script>
-    var slideIndex = 1;
-    showSlides(slideIndex);
+      var slideIndex = 1;
+      showSlides(slideIndex);
 
-    // Next/previous controls
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
+      // Next/previous controls
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
 
-    // Thumbnail image controls
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
-    }
+      // Thumbnail image controls
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
 
-    function showSlides(n) {
-      var i;
-      var slides = document.getElementsByClassName("mySlides");
-      var dots = document.getElementsByClassName("dot");
-      if (n > slides.length) {slideIndex = 1}
-      if (n < 1) {slideIndex = slides.length}
-      for (i = 0; i < slides.length; i++) {
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1
+        }
+        if (n < 1) {
+          slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
           slides[i].style.display = "none";
-      }
-      for (i = 0; i < dots.length; i++) {
+        }
+        for (i = 0; i < dots.length; i++) {
           dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
       }
-      slides[slideIndex-1].style.display = "block";
-      dots[slideIndex-1].className += " active";
-    }
 
-    function postFact() {
-      alert("Post Fact?");
-    }
+      function postFact() {
+        alert("Post Fact?");
+      }
     </script>
