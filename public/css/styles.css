@@ -454,7 +454,7 @@ hr {
   /* top: 65px; */
 }
 
-@media screen and (max-width: 750px) {
+@media (max-width: 750px) {
   .toggle-btn-visible {
     display: block;
   }
