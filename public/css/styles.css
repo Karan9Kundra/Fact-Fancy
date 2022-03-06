@@ -13,9 +13,10 @@ nav {
 
 .bootstrap-logo {
   border-radius: 10px;
-  transform: rotate(10deg);
+  transform: rotate(15deg);
   height: 100px;
-  margin-left: 800px;
+  margin-top: 20px;
+  margin-left: auto;
 }
 
 .hr-f {
@@ -29,9 +30,10 @@ nav {
 
 .node-logo {
   border-radius: 10px;
-  transform: rotate(10deg);
+  transform: rotate(15deg);
   height: 100px;
-  margin-left: 900px;
+  margin-left: auto;
+  margin-top: 20px;
   bottom: 100px;
 }
 
@@ -244,7 +246,7 @@ hr {
   color: #1abc9c !important;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1050px) {
   .bootstrap-logo {
     display: none;
   }
@@ -258,6 +260,14 @@ hr {
   }
 }
 
+.page-image-mobile-1 {
+  display: none;
+}
+
+.page-image-mobile-2 {
+  display: none;
+}
+
 @media (max-width: 1300px) {
   .page-image-1 {
     display: none;
@@ -266,6 +276,21 @@ hr {
   .page-image-2 {
     display: none;
   }
+
+  .page-image-mobile-1 {
+    display: block;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.12);
+  }
+
+  .page-image-mobile-2 {
+    display: block;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.12);
+  }
+
   .terms {
     margin-left: 5px;
     margin-right: 5px;
