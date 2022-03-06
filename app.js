@@ -8,7 +8,7 @@ const mongoose = require('mongoose');
 
 const factsStartingContent = "Fact Fancy is a site where you can get facts about lots of topics.";
 const aboutContent = "About Fact Fancy.";
-const contentContent = "Fact Fancy gives you facts about loads of topics, including: sports, games, news or simply just plain facts!";
+const contentContent = "Fact Fancy, the open source and editable fact-website gives you facts about loads of topics, including: sports, games, news or simply just plain facts!";
 const contactContent = "Contact Us!";
 const privacyContent = "Privacy Policy.";
 const termsContent = "Terms And Conditions";
