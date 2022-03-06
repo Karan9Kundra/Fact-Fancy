@@ -494,3 +494,35 @@ hr {
     display: none;
   }
 }
+
+.back {
+  background-color: #000000;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 19px;
+  color: white;
+}
+
+.back:hover {
+  text-decoration: none;
+  color: white;
+  background-color: #000000;
+  border: 3px solid grey;
+  transition: 0.01s;
+}
+
+.back-c {
+  background-color: #000000;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  color: white;
+}
+
+.back-c:hover {
+  text-decoration: none;
+  color: white;
+  border-radius: 20px;
+  background-color: #000000;
+  transition: 0.1s;
+}
