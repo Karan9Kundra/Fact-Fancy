@@ -269,7 +269,7 @@ hr {
   display: none;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1200px) {
   .page-image-1 {
     display: none;
   }
