@@ -508,11 +508,25 @@ hr {
 
   .toggle-target-expanded {
     display: block;
-    margin-top: 50px;
+    /* margin-top: 20px; */
   }
 
   .reviews {
     display: none;
+  }
+
+  .navbar-brand {
+    display: none;
+  }
+
+  .navbar {
+    padding-top: 30px;
+    background-color: rgb(235, 235, 235);
+  }
+
+  .link-nav {
+    font-weight: bolder;
+    color: #000000;
   }
 }
 
